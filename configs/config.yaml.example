@@ -1,0 +1,23 @@
+{
+  "http_listen" : "127.0.0.1:8881",
+  "log_file": "logs/logs.log",
+  "log_level": "info",
+
+  "expiration_seconds_buckets": 60,
+  "ip_bucket_max": 100,
+  "login_bucket_max": 100,
+  "password_bucket_max": 100,
+
+  "db_host_port": db,
+  "db_name": "anti_brute_force",
+  "db_user": "root",
+  "db_pass": "root",
+
+  "aerospike_namespace": "anti_brute_force",
+  "aerospike_cluster": [
+    {
+      "host": as,
+      "port": 3000
+    }
+  ]
+}
